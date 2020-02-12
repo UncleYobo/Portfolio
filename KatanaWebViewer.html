@@ -1,0 +1,110 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Future Sight AR and Katana</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	
+	<body>
+		<div id="colorlib-page">
+			<div id="colorlib-main">
+				<section id="colorlib-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight"><br><br>
+						<span class="heading-meta">Project Detail</span>
+						<h2 class="colorlib-heading">Katana Web Viewer</h2>
+						<p class="col-md-10">Katana also included a web app that was used to give end users the ability to upload and create their own work instructions and tutorials that could be viewed using Katana XR.  It quickly became apparent that we needed a way to show the users 3D assets that had been uploaded before attaching them to tutorials.  Thus the Katana Web Viewer was born, built into an Angular component with injected Unity WebGL content.</p>
+					</div>
+					<br><br><br><br>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>Unity WebGL</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<p>I first evaluated my options for building the web viewer.  After exploring some prebuilt tools like Sketchfab, or Clara.io, it was concluded that a custom solution was needed for the functionality that we required.  I built out the resultant web viewer using Unity's WebGL, utilizing Unity's robust capabilities alongside the proven nature of its technology.  Due to my familiarity with Unity, I was able to quickly produce the web viewer with minimal loss.</p>
+						</div>
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/altitudes.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3>Katana's Web Viewer</h3>
+										<span>The Web Viewer in development.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>JHipster and Angular</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/altitudes.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3>JHipster boilerplate code</h3>
+										<span>Katana was already an existing JHipster web application</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<p>Next, I had to familiarize myself with the existing web app that was being built using JHipster while I was simultaneously developing Katana XR.  JHipster runs Angular on the front-end, allowing me to quickly delve in with technology that I was already familiar with.  By coordinating with the web application developers, I was able to integrate seamlessly into my colleagues' workflow, allowing me to contribute to another team's project without interrupting their development.</p>
+						</div>
+					</div>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>Dependency Injected Content</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<p>By converting the resultant Unity WebGL JavaScript files into exported modules, I was able to successfully inject the Unity content into a custom Angular component, allowing it to be called anywhere in the application.  This included a custom JavaScript plugin that was implemented on the Unity side that allowed the passing of data back and forth from the Angular to the Unity app.  In the end, I was able to procedurally process and load 3D content in the form of .obj files that had been previously uploaded through the Angular app.</p>
+						</div>
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/altitudes.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3>Viewing a 3D model procedurally</h3>
+										<span>Screen capture from Google Chrome, Katana XR, Copyright Future Sight AR 2020 All Rights Reserved</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
