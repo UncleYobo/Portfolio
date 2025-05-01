@@ -1,0 +1,110 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Synthetic Data Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	
+	<body>
+		<div id="colorlib-page">
+			<div id="colorlib-main">
+				<section id="colorlib-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight"><br><br>
+						<span class="heading-meta">Project Detail</span>
+						<h2 class="colorlib-heading">Synthetic Data Generator</h2>
+						<p class="col-md-10">While producing XR experiences that were capable of object detection in real time, I found it necessary to develop a pipeline to produce accurate synthetic training data using 3D models and our existing Unity tech stack for situations where obtaining real world training photos and footage in the volumed needed for accurate training was impractical.  Thus, the Synthetic Data Generator was born.</p>
+					</div>
+					<br><br><br><br>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>Unity 6 Editor</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<p>I had a fairly clear vision of my direction from the start, I had access to accurate 3D models, a Unity tech stack to work with, and a knowledge of how to generate the training data from inside the Editor.  I quickly made an Editor tool with Unity 6 that was able to ingest models and output captured images directly to my Python training environment.  On average, I was able to generate upwards of 20K+ unique training images from scratch in approximately 2-3 minutes per batch.</p>
+						</div>
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/SDG_Editor.png);">
+								<div class="desc">
+									<div class="con">
+										<h3>Unity 6 Editor Tool</h3>
+										<span>All variables were editable from the Inspector</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>Training Data Variance</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/DTW_Demo.gif);">
+								<div class="desc">
+									<div class="con">
+										<h3>YOLOv11n</h3>
+										<span>Performance Metrics provided via Ultralytics</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<p>In order to create variance in the training data, I added parameters to the Editor tool that allowed me to freely manipulate values from the Inspector window.  I could alter the position, rotation, and scale of the object, as well as the number of objects included into each image for advanced training.  Furthermore, variables for background color, lighting conditions, and output size of the training data automated the variation of training data per image to add more complexity to train the model.</p>
+						</div>
+					</div>
+					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
+						<p>Labeling for YOLO Training</p>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<p>The final challenge was generating accurate labeling for the generated images.  By using Unity's rendering engine, I was able to calculate the bounding box values and center point for each unique object rendered as well as assigning the class name for training the YOLO object detection model I was using at the time.  Image labels were verified using my Python training environment and code I had written to test the individual images.</p>
+						</div>
+						<div class="col-md-5">
+							<div class="project" style="background-image: url(images/SDG_Tagged.png);">
+								<div class="desc">
+									<div class="con">
+										<h3>Detecting Bricks</h3>
+										<span>Brick detection running in real time on Quest 3</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
