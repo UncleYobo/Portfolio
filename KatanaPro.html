@@ -46,7 +46,7 @@
 					<div class="flexslider js-fullheight"><br><br>
 						<span class="heading-meta">Project Detail</span>
 						<h2 class="colorlib-heading">Katana Pro</h2>
-						<p class="col-md-10">During my time at Dauntless XR, our organization was partnered with Dell Technologies through their "Powered By Dell" initiative that highlighted small businesses that were creating unique and innovative use cases through the use of hardware produced by Dell Technologies.  I was tasked with creating a demonstration application that would provide an engaging and user-friendly proof-of-concept that was displayed at the 2025 Dell Technology World Conference and reflected the type of work I was creating with our AI-powered object recognition software that was capable of running on mobile devices.</p>
+						<p class="col-md-10">In an effort to modernize the web-authoring platform, I was tasked with creating a fullstack web application to offer a no-code authoring solution to allow users to create XR guided workflows that mimicked the simplicity of a Google Form.  The solution was to be containerized and deployed onto an AWS EC2 instance and allow users to view content in XR that was published to the platform.  Workflows were either published to an organization for internal use or made publicly available for all users.</p>
 					</div>
 					<br><br><br><br>
 					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
@@ -54,14 +54,14 @@
 					</div>
 					<div class="row">
 						<div class="col-md-5">
-							<p>Considering the limitations of the hardware available at the time, I selected the Meta Quest 3 for the best end user experience.  The intuitive controls, head mounted display comfort, and onboard hardware of the Quest 3 allowed me the best combination of processing power and end user experience without sacrificing performance or image quality.  Using a Dell-provided Lego set that contained 30 unique pieces, I was able to create an experience that was capable of detecting the individual bricks and associate them with the tasks I parsed from the instruction booklet, allowing me to tag and direct the user's attention to the bricks relevant to the current step they were on, thereby streamlining the assembly process.</p>
+							<p>I selected React and Tailwind CSS for the frontend application due to the stability and my own familiarity of the framework.  Guided by mockups that were created in collaborated on in Figma, I created an interface that highlighted simplicity and ease of use.</p>
 						</div>
 						<div class="col-md-5">
-							<div class="project" style="background-image: url(images/KWV_1.gif);">
+							<div class="project" style="background-image: url(images/KatanaProWorkflow.png);">
 								<div class="desc">
 									<div class="con">
-										<h3>Quest 3 Beta Test</h3>
-										<span>Object Detection running on Quest 3.</span>
+										<h3>Workflow Authoring</h3>
+										<span>The no-code solution for authoring XR content.</span>
 									</div>
 								</div>
 							</div>
@@ -72,17 +72,17 @@
 					</div>
 					<div class="row">
 						<div class="col-md-5">
-							<div class="project" style="background-image: url(images/KWV_2.gif);">
+							<div class="project" style="background-image: url(images/KatanaProAnalytics.png);">
 								<div class="desc">
 									<div class="con">
-										<h3>YOLOv11n</h3>
-										<span>Performance Metrics provided via Ultralytics</span>
+										<h3>Analytics Dashboard</h3>
+										<span>Users could see how their content was being engaged with in real time.</span>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-5">
-							<p>Next, I needed to select the AI architecture that would power the experience.  By considering the performance limitations stated earlier, I chose the YOLOv11n Object Detection model from Ultralytics running on Unity Sentis on the backend for an inference engine.  My model was trained for 500 epochs using synthetic data I generated from Lego models for accurate detections of the specific bricks included in the Dell-provided set while avoiding model bloat with unneccesary training.  I was able to consistently acheive an average of 80-95% confidence on the individual bricks the model was trained to detect.</p>
+							<p>I then created a backend application using Node.js running a PostgreSQL database to separate the workflows into public and private organization repositories.  Furthermore, this allowed me to create engaging analytics dashboards for users to view how their content was being interacted with.</p>
 						</div>
 					</div>
 					<div class="flexslider js-fullheight col-md-10 colorlib-heading">
@@ -90,17 +90,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-5">
-							<p>User contruction time was tracked during the application and recorded to a leaderboard that Dell event organizers were able to use for promotional prizes.  I was able to make inferences using real time camera footage taken from the Quest's front-facing camera using the Meta Passthrough API while delivering an average frame rate of 65fps during inference.</p>
-						</div>
-						<div class="col-md-5">
-							<div class="project" style="background-image: url(images/KWV_3.gif);">
-								<div class="desc">
-									<div class="con">
-										<h3>Detecting Bricks</h3>
-										<span>Brick detection running in real time on Quest 3</span>
-									</div>
-								</div>
-							</div>
+							<p>After containerizing the application using Docker, I deployed the solution to AWS and used NGinx to handle the proxies for domain management.  The application is live at katanaxr.com and boasts an uptime of over 99.9%.</p>
 						</div>
 					</div>
 				</section>
